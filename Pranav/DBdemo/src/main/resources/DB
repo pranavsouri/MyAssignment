@@ -1,0 +1,23 @@
+Registration table 
+
+Name varchar(30)
+ 
+username varchar(10)
+
+password  varchar(20)
+
+DOB date
+
+Phone int
+
+amount int
+
+email varchar(40)
+
+=================================
+
+Accounts table
+
+
+
+
