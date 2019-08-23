@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="mycar" class="com.parent.model.Car">
+		<property name="color" value="red"></property>
+		<property name="make" value="honda"></property>
+	</bean>
+	<bean id="touristcar" class="com.parent.model.SedanCar"
+		parent="mycar">
+		<property name="model" value="civic"></property>
+	</bean>
+	<bean id="anothercar" class="com.parent.model.Car" parent="mycar"></bean>
+</beans>
